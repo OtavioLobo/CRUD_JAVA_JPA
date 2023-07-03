@@ -1,6 +1,18 @@
 # CRUD_JAVA_JPA
-Um sistema CRUD de controle de funcionarios
+Sistema de Gerenciamento de Empresas
+Este é um sistema bem simples de gerenciamento de empresas em Java, que permite criar e interagir com funcionários, gerentes, departamentos e empresas.
 
-classes: Funcionario, Gerente, Departamento, Empresa e Main.
-A relação entre Departamento e Funcionario 1 para muitos, ou seja, um departamento pode ter vários funcionários.
-A relação entre Empresa e Departamento 1 para muitos, ou seja, uma empresa pode ter vários departamentos
+Funcionalidades
+
+Criação de funcionários, gerentes, departamentos e empresas.
+Associação de funcionários a departamentos e departamentos a empresas.
+Cálculo do custo mensal total de salários de todos os funcionários de um departamento.
+Cálculo do custo mensal total de salários de todos os departamentos de uma empresa.
+
+Configurações de Relacionamentos
+
+A classe Gerente é uma subclasse da classe Funcionario, herdando os atributos básicos de um funcionário e adicionando atributos específicos, como o bônus.
+A classe Departamento possui uma lista de funcionários (List<Funcionario>) para representar a relação de 1 para muitos entre departamentos e funcionários. Um departamento pode ter vários funcionários.
+A classe Empresa possui uma lista de departamentos (List<Departamento>) para representar a relação de 1 para muitos entre empresas e departamentos. Uma empresa pode ter vários departamentos.
+
+
