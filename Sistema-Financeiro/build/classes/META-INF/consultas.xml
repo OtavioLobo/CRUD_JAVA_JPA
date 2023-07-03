@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd">
+
+	<named-query name="Gerentes">
+		<query>
+			SELECT g FROM GerenteDTO g
+		</query>
+	</named-query>
+	
+	<named-query name="Funcionarios">
+		<query>
+			SELECT f FROM FuncionarioDTO f
+		</query>
+	</named-query>
+	
+	<named-query name="FuncionariosDepartamento">
+		<query>
+			SELECT f FROM FuncionarioDTO f
+			WHERE f.departamento.id = :departamentoId
+		</query>
+	</named-query>
+	
+	<named-query name="PorNomeFuncionario">
+		<query>
+			SELECT f FROM FuncionarioDTO f
+			WHERE f.nome LIKE :consulta
+		</query>
+	</named-query>
+	
+
+</entity-mappings>
