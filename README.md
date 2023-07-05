@@ -1,6 +1,5 @@
 # CRUD_JAVA_JPA
-Sistema de Gerenciamento de Empresas
-Este é um sistema bem simples de gerenciamento de empresas em Java, que permite criar e interagir com funcionários, gerentes, departamentos e empresas.
+Este é um porjeto bem simples de "gerenciamento de empresas" em Java, que permite criar e interagir com funcionários, gerentes, departamentos e empresas.
 
 Funcionalidades
 
